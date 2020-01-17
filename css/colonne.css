@@ -1,0 +1,10 @@
+.colonne {
+    float: left;
+    width: 32%;
+    background-color: greenyellow;
+    border-left-style: solid;
+    border-left-color: blue;
+    border-left-width: 0.2em;
+    padding-left: 0.3em;
+}
+
