@@ -142,3 +142,18 @@ Grille de 12 éléments ==> styles pour affichage sur 12, 8, 6, 4, 3, 2, 1 colon
     }
     
 }
+
+/* 2ème partie */
+.left {
+    float: left;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width:576px) {
+    .hide {
+        display: none;
+    }
+}
