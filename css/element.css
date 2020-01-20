@@ -1,14 +1,29 @@
-[class*="col"] { 
-    margin-bottom: 20px; 
+body {
+    background-color: #DDD !important;
 }
-img { 
-    width: 100%; 
+
+[class*="col"] {
+    margin-bottom: 20px;
 }
-body { 
-    margin-top: 10px; 
+
+.inline-form {
+    margin-top: 20px;
 }
-/* .page-header {
-    padding-bottom: 9px;
-    margin: 40px 0 20px;
-    border-bottom: 1px solid #eee;
-  } */
+
+.inline-form input {
+    display: inline-block;
+    width: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+.well {
+    background-color: #CCC !important;
+    padding: 20px;
+}
+
+a:focus {
+    outline: 0;
+}
