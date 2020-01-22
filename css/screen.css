@@ -44,6 +44,10 @@ main {
 
 }
 
+#gallery {
+    text-align: center;
+}
+
 #gallery a:hover {
     transition: all .3s ease-in-out;
     transform: scale(.9) rotate(-5deg);
@@ -57,4 +61,9 @@ main {
 
 main img {
     max-width: 90%;
+}
+
+p#texteGrande {
+    margin-left: 20px;
+    margin-right: 25px;
 }
