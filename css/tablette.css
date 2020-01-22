@@ -1,0 +1,19 @@
+@media (max-width: 780px) {
+ nav {
+     max-height: 90px;
+     overflow-x: auto;
+     overflow-y: hidden;
+     white-space: nowrap;
+     font-size: 20px;
+ } 
+ 
+ aside {
+     width: 33%;
+     height: 250px;
+ }
+
+ aside img {
+    max-width: 100%;
+    height: auto;
+}   
+}
