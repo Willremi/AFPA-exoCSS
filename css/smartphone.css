@@ -1,25 +1,27 @@
-@media (max-width: 551px) {
-   nav {
-    border: hidden;
-   }
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
 
-    nav ul li {
-       font-size: .9em;
-       line-height: 2em;
-       width: 7.1875em;
-   } 
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
 
-   aside {
-       float: none;
-       width: 100%;
-       height: auto;
-   }
+#wrapper{
+    width: 95%;
+    margin: 0 8px;
+}
 
-   #gallery a {
-       float: none;
-       width: 75px;
-       margin: 2%;
-   }
+li {
+    display: inline-block;
+    width: 33%;
+}
 
-   
+nav {
+    max-height: 90px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
