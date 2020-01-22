@@ -1,0 +1,54 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #CACACA;
+    width: 90%;
+}
+
+nav {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+li {
+    border: 1px solid black;
+    width: 33%;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(141, 141, 141, 0.795);
+}
+
+aside {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 33%;
+    overflow-y: auto;
+    height: 500px;
+}
+
+#gallery a {
+    display: inline-block;
+    width: 40%;
+    max-width: 160px;
+}
+
+#gallery a:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(.9) rotate(-5deg);
+}
+
+main {
+    float: right;
+    width: 66%;
+    
+}
+
+main img {
+    max-width: 100%;
+}
