@@ -1,0 +1,25 @@
+@media (max-width: 551px) {
+   nav {
+    border: hidden;
+   }
+
+    nav ul li {
+       font-size: .9em;
+       line-height: 2em;
+       width: 7.1875em;
+   } 
+
+   aside {
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+
+   #gallery a {
+       float: none;
+       width: 75px;
+       margin: 2%;
+   }
+
+   
+}
