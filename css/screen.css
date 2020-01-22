@@ -23,19 +23,25 @@ li {
 }
 
 aside {
-    position: relative;
+    
     display: flex;
     flex-direction: row;
     float: left;
     width: 33%;
     overflow-y: auto;
     height: 500px;
+    background-color: white;
+}
+main {
+    
+    background-color: white;
 }
 
 #gallery a {
     display: inline-block;
     width: 40%;
     max-width: 160px;
+
 }
 
 #gallery a:hover {
@@ -46,9 +52,9 @@ aside {
 main {
     float: right;
     width: 66%;
-    
+    text-align: center;
 }
 
 main img {
-    max-width: 100%;
+    max-width: 90%;
 }
