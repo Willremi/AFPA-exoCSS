@@ -1,0 +1,18 @@
+
+
+@media (min-width: 800px) {
+    nav {
+        overflow: hidden;
+        white-space: normal;
+        margin: 2%;
+    }
+
+    li {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1%;
+  }  
+
+  
+}

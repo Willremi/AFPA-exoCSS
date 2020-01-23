@@ -1,0 +1,47 @@
+/* body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #B6B2B1;
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+#wrapper{
+    width: 95%;
+    margin: 0 8px;
+} */
+
+@media (min-width: 480px) {
+
+    aside {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        overflow-y: auto;
+        height: 500px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #gallery {
+        display: block;
+       
+    }
+
+    #gallery img {
+        margin: 2%;
+        width: 33%;
+        height: auto;
+    }
+
+    main {
+        float: right;
+        width: 66%;
+    }
+}

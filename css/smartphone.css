@@ -64,10 +64,11 @@ nav {
     margin-left: 0;
 }
 
-#gallery a:hover {
+#gallery img:hover {
     transition: all .3s ease-in-out;
     transform: scale(.9) rotate(-5deg);
 }
+
 
 main img {
     max-width: 100%;
@@ -86,6 +87,7 @@ main img {
 
 aside {
     margin-bottom: 2%;
+    box-shadow: 2px 2px 2px black;
 }
 
 main {
