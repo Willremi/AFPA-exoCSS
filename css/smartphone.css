@@ -2,11 +2,12 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 * {
     box-sizing: border-box;
-    width: 100%;
+    background-color: #B6B2B1;
 }
 
 #wrapper{
@@ -17,6 +18,7 @@ body {
 li {
     display: inline-block;
     width: 33%;
+    border: 1px solid black;
 }
 
 nav {
@@ -25,3 +27,32 @@ nav {
     overflow-y: hidden;
     white-space: nowrap;
 }
+
+#gallery
+{
+  display: flex;
+  overflow-x: auto;
+}
+ 
+#gallery a
+{
+  
+  float: none;
+  margin: 2%;
+  
+}
+
+#gallery a:nth-child(n+2) {
+    margin-left: 0;
+}
+
+#gallery a:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(.9) rotate(-5deg);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
