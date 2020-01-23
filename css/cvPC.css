@@ -1,0 +1,20 @@
+/* Grand écran */
+@media screen and (min-width:1050px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Ecran std */
+@media screen and (min-width:640px) and (max-width:1049px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Petit écran et tablettes */
+@media screen and (min-width:400px) and (max-width:639px) {
+    body {
+        font-size: 12px;
+    }
+}
