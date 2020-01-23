@@ -3,16 +3,27 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #B6B2B1;
 }
 
 * {
     box-sizing: border-box;
-    background-color: #B6B2B1;
+    
 }
 
 #wrapper{
     width: 95%;
     margin: 0 8px;
+}
+
+header span {
+    display: inline;
+    
+}
+
+header h1 {
+    margin: 2%;
+    border: 1px dashed black;
 }
 
 li {
@@ -42,6 +53,10 @@ nav {
   
 }
 
+#gallery img {
+    height: 100px;
+}
+
 #gallery a:nth-child(n+2) {
     margin-left: 0;
 }
@@ -56,3 +71,19 @@ main img {
     height: auto;
 }
 
+#gallery {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#grandeImage {
+    padding: 2%;
+}
+
+aside {
+    margin-bottom: 2%;
+}
+
+main {
+    background-color: white;
+}
