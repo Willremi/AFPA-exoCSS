@@ -1,0 +1,86 @@
+@media screen and (max-width:399px) {
+    body {
+        font-size: 10px;
+        position: relative; /* Pour photo identité */
+    }
+
+    /* Photo identité à droite */
+    #civil>img {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: block;
+        float: right;
+        max-width: 130px;
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow: 0 0 3px blue;
+    }
+
+    /* Titre à gauche */
+    body>header {
+        display: block;
+        float: left;
+        width: 60%;
+        margin-bottom: .5em;
+    }
+
+    /* Bloc civil sous photo */
+    #civil {
+        clear: both;
+    }
+
+    #civil h1{ 
+        font-size: 2em;
+        margin: 0.625em  0px; 
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+    }
+
+    /* Bloc divers */
+    #divers {
+        background-color: blue;
+        color: white;
+        padding: .5em 0.77972709551657;
+    }
+
+    /* Enum divers et expé à la demande et positionnés en ligne */
+    ul {
+        display: none;
+    }
+
+    ul li {
+        display: inline;
+    }
+
+    ul li:after {
+        content: ' - '; /* Séparateur */
+    }
+
+    ul li:last-of-type:after {
+        content:'.'; /* Un point après le dernier */
+    }
+
+    #expe h1, #divers h2 {
+        position: relative;
+    }
+
+    #expe h1 img, #divers h2 img {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    /* Affichage à la demande */
+    #expe h1:hover+ul, #divers h2:hover+ul {
+        display: block;
+    }
+
+    /* Rotation triangle */
+    #expe h1 img:hover, #divers h2 img:hover {
+        transform: rotate(180deg);
+        transition: transform .2s ease-in-out;
+    }
+}
+
