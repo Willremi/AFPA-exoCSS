@@ -11,6 +11,7 @@
         top: 0px;
         display: block;
         float: right;
+        width: 50%;
         max-width: 130px;
         border: 3px solid white;
         border-radius: 5px;
@@ -30,21 +31,31 @@
         clear: both;
     }
 
-    #civil h1{ 
+    /* nom de la personne */
+    #civil h1 {
         font-size: 2em;
-        margin: 0.625em  0px; 
+        margin: .625em 0px;
         font-weight: bold;
         color: white;
         background-color: blue;
+    }
+
+    #civil {
+        color: black;
+        background-color: white;
     }
 
     /* Bloc divers */
     #divers {
         background-color: blue;
         color: white;
-        padding: .5em 0.77972709551657;
+        padding: .5em 0.77972709551657%;
     }
 
+    #divers h2 {
+        background-color: white;
+        color: blue;
+    }
     /* Enum divers et expé à la demande et positionnés en ligne */
     ul {
         display: none;
@@ -84,3 +95,6 @@
     }
 }
 
+#civil, #divers, main {
+    width: 100%;
+}
