@@ -1,7 +1,47 @@
+/* Tous écrans PC d'au moins 400px */
+@media screen and (min-width:400px) {
+    /* titre et bloc main à gauche */
+    body>header, main {
+        display: block;
+        float: left;
+        width: 73.09941520467836% ; /* 750px/1026px */
+    }
+
+    /* Bloc photo + adresse et divers */
+    #civil, #divers {
+        float: right;
+        width: 24.36647173489279%; /* 250px/1026 */
+        background-color: blue;
+        color: white;
+        padding: .5em  0.77972709551657% ; /*8px/16px 8px/1026px;*/
+    }
+
+    /* photo identité */
+    #civil>img {
+        display: block;
+        width: 95%;
+        margin: auto;
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+
+    /* pas de triangles pour détails à la demande */
+	#expe h1>img, #divers h2>img {
+		display:none;
+	}
+}
+
+
 /* Grand écran */
 @media screen and (min-width:1050px) {
     body {
         font-size: 16px;
+    }
+
+    /*dimension des triangles icones*/
+    .icone{
+        height: 16px;
+        width : 16px;
     }
     
 }
@@ -11,11 +51,23 @@
     body {
         font-size: 14px;
     }
+
+    /*dimension des triangles icones*/
+    .icone{
+        height: 14px;
+        width : 14px;
+    }
 }
 
 /* Petit écran et tablettes */
 @media screen and (min-width:400px) and (max-width:639px) {
     body {
         font-size: 12px;
+    }
+
+    /*dimension des triangles icones*/
+    .icone{
+        height: 12px;
+        width : 12px;
     }
 }

@@ -29,6 +29,8 @@
     /* Bloc civil sous photo */
     #civil {
         clear: both;
+        background-color: white;
+        color: black;
     }
 
     /* nom de la personne */
@@ -40,11 +42,6 @@
         background-color: blue;
     }
 
-    #civil {
-        color: black;
-        background-color: white;
-    }
-
     /* Bloc divers */
     #divers {
         background-color: blue;
@@ -52,10 +49,7 @@
         padding: .5em 0.77972709551657%;
     }
 
-    #divers h2 {
-        background-color: white;
-        color: blue;
-    }
+   
     /* Enum divers et expé à la demande et positionnés en ligne */
     ul {
         display: none;
@@ -79,6 +73,7 @@
 
     #expe h1 img, #divers h2 img {
         position: absolute;
+        display: block;
         right: 0px;
         bottom: 0px;
     }
@@ -93,8 +88,14 @@
         transform: rotate(180deg);
         transition: transform .2s ease-in-out;
     }
+
+    /*dimension des triangles icones*/
+    .icone{
+        height: 12px;
+        width : 12px;
+    }
 }
 
-#civil, #divers, main {
+/* #civil, #divers, main {
     width: 100%;
-}
+} */

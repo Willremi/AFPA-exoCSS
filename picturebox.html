@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/smartphone.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/mainjquery.js"></script>
 </head>
 <body>
    <div id="wrapper"> <!-- Enveloppe principale-->
@@ -17,45 +20,42 @@
        <!-- Navigation albums -->
        <nav>
            <ul>
-               <li>Album 1</li>
-               <li>Album 2</li>
-               <li>Album 3</li>
-               <li>Album 4</li>
-               <li>Album 5</li>
-               <li>Album 6</li>
+               <li class="active" onclick="active(this);">Album 1</li>
+               <li class="" onclick="active(this);">Album 2</li>
+               <li class="" onclick="active(this);">Album 3</li>
+               <li class="" onclick="active(this);">Album 4</li>
+               <li class="" onclick="active(this);">Album 5</li>
+               <li class="" onclick="active(this);">Album 6</li>
            </ul>
        </nav>
 
        <aside> <!-- Miniatures -->
             <div id="gallery">
-                <a href="#"><img onclick="affiche(this);" src="img/small/0.jpg" alt="1" title="1"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/1.jpg" alt="2" title="2"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/2.jpg" alt="3" title="3"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/3.jpg" alt="4" title="4"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/4.jpg" alt="5" title="5"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/5.jpg" alt="6" title="6"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/6.jpg" alt="7" title="7"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/7.jpg" alt="8" title="8"></a>
-                <a href="#"><img onclick="affiche(this);" src="img/small/0.jpg" alt="Mini1"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/1.jpg" alt="Mini2"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/2.jpg" alt="Mini3"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/3.jpg" alt="Mini4"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/4.jpg" alt="Mini5"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/5.jpg" alt="Mini6"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/6.jpg" alt="Mini7"></a>
-                <a href=""><img onclick="affiche(this);" src="img/small/7.jpg" alt="Mini8"></a>
+                <a href="img/0.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/0.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut, illo labore eligendi, ea dolorum laborum asperiores!" title="Lorem ipsum dolor sit amet 1"></a>
+                <a href="img/1.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 2"></a>
+                <a href="img/2.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 3"></a>
+                <a href="img/3.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 4"></a>
+                <a href="img/4.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 5"></a>
+                <a href="img/5.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/5.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 6"></a>
+                <a href="img/6.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/6.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 7"></a>
+                <a href="img/7.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/7.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 8"></a>
+                <a href="img/1.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 9"></a>
+                <a href="img/2.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 10"></a>
+                <a href="img/3.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 11"></a>
+                <a href="img/4.jpg" onclick="return false;"><img onclick="affiche(this);" src="img/small/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut" title="Lorem ipsum dolor sit amet 12"></a>
+                
             </div>
        </aside>
 
        <main> <!-- Grande image -->
-            <div id="grandeImage"><img src="img/0.jpg" alt="1"></div>
+            <div id="grandeImage"><img src="img/0.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut, illo labore eligendi, ea dolorum laborum asperiores!" title="Lorem ipsum dolor sit amet 1"></div>
             <div id="textesImage">
-                <h2 id="titreGrandeImage">Lorem ipsum dolor sit</h2>
-                <p id="texteGrandeImage" class="justifier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, culpa error enim, temporibus aspernatur eaque quibusdam impedit soluta placeat harum nesciunt totam est voluptatem, perferendis accusantium ullam! Esse, rem at.</p>
+                <h2 id="titreGrandeImage">Lorem ipsum dolor sit 0</h2>
+                <p id="texteGrandeImage" class="justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam sunt voluptatum veritatis deserunt rem nesciunt quam aut, illo labore eligendi, ea dolorum laborum asperiores!.</p>
             </div>
        </main>
    </div> <!-- Fin enveloppe principale -->
-   <script src="main.js"></script>
+   
   
 </body>
 </html>

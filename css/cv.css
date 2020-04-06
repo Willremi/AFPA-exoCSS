@@ -3,86 +3,101 @@
     font-family: sans-serif;
 }
 
-body {
-    margin: .75em 1%;
-}
+/* Tous écrans - composition de référence sur 1050px */
+@media screen {
+    html, body {
+        margin: .75em 1.14285714285714%; /* 12px/16px 12px/1050px  */
+    }
+    
+    body>header {
+        font-size: 3em;
+        font-weight: bold;
+        color: blue;
+        margin-bottom: 1.041666666666667em ; /*50px/3em;*/
+    }
+    
+    /* Titres du bloc main */
+    #formation>header, #expe>header {
+        font-size: 2em;
+        /* margin: 0.625em  2em; 20px/32px */
+        padding : 0.70821529745042% ; /* 5px/706px */
+        background-color: blue;
+        color: white;
+    }
+    
+    /* Adresse de la personne */
+    #civil p {
+        margin: 0.3125em 0px; /* 5px/16px 0px */
+    }
 
-body>header {
-    font-size: 3em;
-    font-weight: bold;
-    color: blue;
-    margin-bottom: 1em;
-}
+    /* Pas de triangles pour détails à la demande */
+    #expe h1>img, #divers h2>img {
+        display: none;
+    }
+    
+    /* Enum en expérience prof */
+    #expe h1 {
+        font-size: 1.2em;
+        background-color: #11b7ee;
+        font-weight: normal;
+    }
+    
+    /* Séparation en 2 parties de l'exp prof */
+    #expe h1 span:first-of-type {
+        display: inline-block; /* Nécessaire pour dimensionner */
+        word-wrap: break-word;
+        width: 40%; /* Espacer les 2 parties  */
+    }
+    
+    /* Photo identité */
+    #civil>img {
+        display: block;
+        width: 95%;
+        margin: auto;
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+    
+    /* Titre et bloc main à gauche */
+    body>header, main {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    
+    /* Bloc photo + adresse et divers */
+    #civil, #divers {
+        float: right;
+        width: 100%;
+        background-color: blue;
+        color: white;
+        padding: 8px;
+    }
+    
+    /* Diplômes */
+    #formation table th {
+        text-align: left;
+        font-size: 1.2em;
+    }
+    
+    /* Espaces entre 2 formations */
+    #formation table tr:nth-child(2n) td {
+        padding-bottom: 1em; /* 16px */
+    }
 
-/* Titres du bloc main */
-#formation>header, #expe>header {
-    font-size: 2em;
-    margin: 0.625em  0px; /* 20px/32px */
-    padding : 0.7% ; /*5px/706px */ 
-    background-color: blue;
-    color: white;
-}
-
-/* Pas de triangles pour détails à la demande */
-#expe h1>img, #divers h2>img {
-    display: none;
-}
-
-/* Enum en expérience prof */
-#expe h1 {
-    font-size: 1.2em;
-    background-color: #11b7ee;
-    font-weight: normal;
-}
-
-/* Séparation en 2 parties de l'exp prof */
-#expe h1 span:first-of-type {
-    display: inline-block; /* Nécessaire pour dimensionner */
-    word-wrap: break-word;
-    width: 40%; /* Espacer les 2 parties  */
-}
-
-/* Photo identité */
-#civil>img {
-    display: block;
-    width: 95%;
-    margin: auto;
-    border: 3px solid white;
-    border-radius: 5px;
-}
-
-/* Titre et bloc main à gauche */
-body>header, main {
-    display: block;
-    float: left;
-    width: 70%;
-}
-
-/* Bloc photo + adresse et divers */
-#civil, #divers {
-    float: right;
-    width: 250px;
-    background-color: blue;
-    color: white;
-    padding: 8px;
-}
-
-/* Diplômes */
-#formation table th {
-    text-align: left;
-    font-size: 1.2em;
-}
-
-/* Espaces entre 2 formations */
-#formation table tr:nth-child(2n) td {
-    padding-bottom: 1em; /* 16px */
-}
-
-#expe ul {
-    margin-left: 13.3333333%; /* 100px/750px */
-}
-
-#divers ul {
-    list-style: none;
-    padding-left: 0px;
+    /* titres et enum en divers */ 
+	#divers>h2 {
+		background-color: white;
+		color : blue;
+		padding : 2.13675213675214% ; /*5px/234px */
+	}
+    
+    #expe ul {
+        margin-left: 13.3333333%; /* 100px/750px */
+    }
+    
+    #divers ul {
+        list-style: none;
+        padding-left: 0px;
+    }
 }
